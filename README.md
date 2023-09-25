@@ -11,4 +11,8 @@ Para este desafio, você precisará usar seus conhecimentos adquiridos no módul
 ## 3o Desafio de projeto - Criando um Sistema e Abstraindo um Celular com POO em C# (\DesafioCelularPOO)
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
 
+## 4o Desafio de projeto - Montando Consultas no SQL Server (\DesafioBancoDados)
+Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de banco de dados, da trilha .NET da DIO.
+Para não instalar o SQL Server, foi executado no http://sqlfiddle.com, fazendo algumas alterações para adequar as limitações
+
 -----------------------------------------------------------------------------
