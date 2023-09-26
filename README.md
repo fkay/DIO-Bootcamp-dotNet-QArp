@@ -15,4 +15,8 @@ Para este desafio, você precisará usar seus conhecimentos adquiridos no módul
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de banco de dados, da trilha .NET da DIO.
 Para não instalar o SQL Server, foi executado no http://sqlfiddle.com, fazendo algumas alterações para adequar as limitações
 
+## 5o Desafio de projeto - Construindo um Sistema de Agendamento de Tarefas com Entity Framework
+Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
+Para não instalar o SQL Server, foi utilizado o SQLite, criando um arquivo local na pasta \db
+
 -----------------------------------------------------------------------------
