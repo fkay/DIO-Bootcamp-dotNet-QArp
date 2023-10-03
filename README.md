@@ -22,4 +22,7 @@ Para não instalar o SQL Server, foi utilizado o SQLite, criando um arquivo loca
 ## 6o Desafio de projeto - Implementando Validações de Testes Unitários com C# (\DesafioTestesUnidade)
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de Testes Unitários com C#, da trilha .NET da DIO.
 
+## 7o Desafio de projeto - Blindando Seu Código com TDD e Testes Unitários Usando .NET Core (\DesafioTDD)
+Reprodução do projeto feito pelo instrutor
+
 -----------------------------------------------------------------------------
