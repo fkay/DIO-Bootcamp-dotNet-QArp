@@ -4,17 +4,22 @@ namespace TesteProjetoTDD
 {
     public class TestesCalculadora
     {
+        private Calculadora _calculadora;
+
+        public TestesCalculadora()
+        {
+            _calculadora = new Calculadora();
+        }
+
         [Theory]
         [InlineData(10, 15, 25)]
         [InlineData(40, 105, 145)]
         public void SomaValoresRetornaResultado(int val1, int val2, int resultado)
         {
             // Arrange
-            Calculadora calc = new Calculadora();
-
 
             // Act
-            var resultado_calc = calc.somar(val1, val2);
+            var resultado_calc = _calculadora.somar(val1, val2);
 
             // Assert
             Assert.Equal(resultado, resultado_calc);
@@ -26,11 +31,10 @@ namespace TesteProjetoTDD
         public void SubtraiValoresRetornaResultado(int val1, int val2, int resultado)
         {
             // Arrange
-            Calculadora calc = new Calculadora();
 
 
             // Act
-            var resultado_calc = calc.subtrair(val1, val2);
+            var resultado_calc = _calculadora.subtrair(val1, val2);
 
             // Assert
             Assert.Equal(resultado, resultado_calc);
@@ -42,11 +46,9 @@ namespace TesteProjetoTDD
         public void MultiplicarValoresRetornaResultado(int val1, int val2, int resultado)
         {
             // Arrange
-            Calculadora calc = new Calculadora();
-
 
             // Act
-            var resultado_calc = calc.multiplicar(val1, val2);
+            var resultado_calc = _calculadora.multiplicar(val1, val2);
 
             // Assert
             Assert.Equal(resultado, resultado_calc);
@@ -58,11 +60,9 @@ namespace TesteProjetoTDD
         public void DividirValoresRetornaResultado(int val1, int val2, int resultado)
         {
             // Arrange
-            Calculadora calc = new Calculadora();
-
 
             // Act
-            var resultado_calc = calc.dividir(val1, val2);
+            var resultado_calc = _calculadora.dividir(val1, val2);
 
             // Assert
             Assert.Equal(resultado, resultado_calc);
@@ -72,15 +72,15 @@ namespace TesteProjetoTDD
         public void DividirValorPorZero()
         {
             // Arrange
-            Calculadora calc = new Calculadora();
 
             // Act Assert
-            Assert.Throws<DivideByZeroException>(() => calc.dividir(5, 0));
+            Assert.Throws<DivideByZeroException>(() => _calculadora.dividir(5, 0));
         }
 
         [Fact]
         public void ExecutarOperacoesReceberHistorico()
         {
+            // Cria nova calculadora para rastrear histórico
             Calculadora calc = new Calculadora();
 
             calc.somar(1, 3);
@@ -92,6 +92,8 @@ namespace TesteProjetoTDD
 
             Assert.NotEmpty(lista);
             Assert.Equal(3, lista.Count);
+            Assert.Equal("5 - 1 = 4", lista[0]);
+            Assert.Equal("10 + 11 = 21", lista[1]);
         }
     }
 }
