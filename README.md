@@ -25,4 +25,7 @@ Para este desafio, você precisará usar seus conhecimentos adquiridos no módul
 ## 7o Desafio de projeto - Blindando Seu Código com TDD e Testes Unitários Usando .NET Core (\DesafioTDD)
 Reprodução do projeto feito pelo instrutor
 
+## 8o Desafio de projeto - O Dia a Dia de um QA: A Prática de Testes Manuais Funcionais (\DesafioQA)
+Seguindo as instruções em vídeo para gerar a documentação, com projeto criado no Jira
+
 -----------------------------------------------------------------------------
